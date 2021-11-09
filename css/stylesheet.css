@@ -1,0 +1,399 @@
+/* below css from Changming */
+/* nav bar background color match company logo */
+body {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif !important;
+}
+
+.bg-dark {
+    background-color: #808080 !important;
+}
+
+/* source from https://css-tricks.com/almanac/properties/t/transition */
+.bg-primary {
+    background-color: #808080 !important;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+    color: black !important;
+}
+
+/* brand name to black */
+.navbar-brand {
+    color: black !important;
+}
+
+/* nav bar to black */
+.nav-link {
+    color: black !important;
+}
+
+/* hover nav bar to yellow */
+.nav-link:hover {
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    color: #FFCA01 !important;
+}
+
+/* 1st section hover over turns yellow */
+.bg-primary:hover {
+    background-color: #FFCA01 !important;
+}
+
+
+/* sticky social media icons only show on device width is more than 900px */
+@media only screen and (min-width: 900px) {
+
+    /* source code https://hasinhayder.github.io/StickySocialBar */
+    /* sticky social media icon animations */
+    .sticky img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .sticky-container {
+        padding: 0px;
+        margin: 0px;
+        position: fixed;
+        right: -119px;
+        top: 130px;
+        width: 200px;
+    }
+
+    .sticky li {
+        list-style-type: none;
+        background-color: transparent;
+        color: white;
+        height: 43px;
+        padding: 0px;
+        margin: 0px 0px 1px 0px;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        cursor: pointer;
+    }
+
+    .sticky li:hover {
+        margin-left: 35px;
+        -webkit-transform: translateX(-115px);
+        -moz-transform: translateX(-115px);
+        -o-transform: translateX(-115px);
+        -ms-transform: translateX(-115px);
+        transform: translateX(-115px);
+    }
+
+    .sticky li img {
+        float: left;
+        margin: 5px;
+    }
+
+    .sticky li p {
+        padding: 0px;
+        margin: 0px;
+        line-height: 43px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 38px !important;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    #navbarResponsive li {
+        text-align: center;
+    }
+
+}
+
+/* sticky social media icons hidden on device width is less than 900px */
+@media only screen and (max-width: 899px) {
+    .sticky-container {
+        visibility: hidden;
+    }
+
+    a {
+        text-align: center;
+    }
+}
+
+/* text shadows in sticky floating social media icons */
+.sticky a {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+/* all links have no underline */
+a:link {
+    text-decoration: none;
+}
+
+.sticky a:visited {
+    text-decoration: none;
+}
+
+.sticky a:active {
+    text-decoration: none;
+}
+
+.sticky a:hover {
+    text-decoration: none;
+}
+
+/* footer CONTACT icon size */
+.list-unstyled img {
+    width: 20px;
+    height: 20px;
+}
+
+/* navbar font size */
+.nav-item {
+    font-size: 18px;
+}
+
+/* Change Management Program add padding top */
+#change-management {
+    padding-top: 100px;
+}
+
+/* adjust text inside columns */
+.col {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* submit button align center */
+#submit {
+    align-content: center;
+}
+
+/* original blue background color, now unset */
+.contactform {
+    background-color: unset !important;
+}
+
+
+/* hover over the button icons at footer, it will be more colorful */
+
+.button-icon {
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.button-icon:hover {
+    opacity: 1;
+}
+
+
+/* below css from Amardip */
+/* testimonial heading*/
+#aTest {
+    color: red;
+}
+
+.aBox {
+    border: 2px solid #c3b9b6;
+    width: 100%;
+    padding: 8px;
+    display: inline-block;
+    background: #f3f3f3;
+    text-align: center;
+    color: #4e4949;
+    float: left;
+}
+
+/* container*/
+.slideshow-container {
+    position: relative;
+    background: #e4dfdff1;
+}
+
+/* slides*/
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    font-style: italic;
+}
+
+/*slideshow next-previous */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.author {
+    color: #2b9ba7;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*#sForm {*/
+/*    display: flex;*/
+/*    flex-flow: row wrap;*/
+/*    align-items: center;*/
+/*}*/
+
+
+/*#sForm label {*/
+/*    margin: 5px 10px;*/
+/*}*/
+
+#sBtn, #submit-btn {
+    border-radius: 25px;
+    background-color: dodgerblue;
+    border: 1px solid #808080;
+    color: white;
+    cursor: pointer;
+}
+
+#sForm button:hover {
+    background-color: #808080 !important;
+}
+
+#submit-btn:hover {
+    background-color: #FFCA01 !important;
+}
+
+
+#sForm input, #form input, textarea {
+    border-radius: 25px !important;
+    vertical-align: center !important;
+    border: 1px solid #808080 !important;
+}
+
+/*#sBtn {*/
+/*    display: block;*/
+/*    width: 30%;*/
+/*    margin: auto;*/
+/*}*/
+
+
+/*@media only screen and (max-width: 800px) {*/
+/*    #sForm input {*/
+/*        margin: 10px 0;*/
+/*    }*/
+
+/*    #sForm {*/
+/*        flex-direction: column;*/
+/*        align-items: stretch;*/
+/*    }*/
+/*}*/
+
+
+/*#sMain {*/
+/*    margin: auto;*/
+/*    width: 60%;*/
+
+/*}*/
+
+
+.err, .serr {
+    color: darkred;
+    visibility: hidden;
+}
+
+/* source: https://css-tricks.com/snippets/css/glowing-blue-input-highlights/*/
+input:focus, textarea:focus, input:hover, textarea:hover {
+    border-color: #FFCA01 !important;
+    box-shadow: 0 1px 1px #FFCA01 inset, 0 0 8px #FFCA01 !important;
+}
+
+/* navbar contact us style */
+#navContact a {
+    font-size: 1em;
+    background: #FFCA01;
+    border-radius: 25px;
+    color: black !important;
+    padding: 10px 10px;
+}
+
+#navContact a:hover {
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    background: #1c89fa;
+    color: white !important;
+}
+
+#aaron {
+    border-radius: 500px !important;
+}
+
+.slideshow-container {
+    border-radius: 500px !important;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+
+/*@media only screen and (max-width: 899px) {*/
+
+/*}*/
+
+
+.required {
+    color: darkred;
+}
+
+#admin {
+    color: #1d2124;
+}
+
+#admin:hover {
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    color: #FFCA01 !important;
+}
+
+#admin a:visited {
+    text-decoration: none;
+}
+
+#admin a:active {
+    text-decoration: none;
+}
+
+#admin a:hover {
+    text-decoration: none;
+}
